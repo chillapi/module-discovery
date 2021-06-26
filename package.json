@@ -8,7 +8,7 @@
     "prebuild": "rimraf dist/*",
     "lint": "tslint -c tslint.json -p tsconfig.json --fix",
     "tsc": "tsc",
-    "build": "handlebars src/generate/templates -f src/generate/templates/precompiled.js && npm run lint && npm run tsc"
+    "build": "npm run lint && npm run tsc"
   },
   "repository": {
     "type": "git",
