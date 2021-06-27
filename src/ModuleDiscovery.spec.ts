@@ -1,8 +1,7 @@
 import { load } from './ModuleDiscovery';
 
-test('loads test module', () => {
-    jest.mock('./package.json', () => ({ dependencies: { "dep": "1.0" } }));
-    jest.mock('dep');
-    expect(load('foo').length).toBe(1);
-    expect(load('bar').length).toBe(0);
+test('loads test module', async () => {
+    // pkg-up exports a method called sync
+    expect((await load('sync')).length).toBe(1);
+    expect((await load('bar')).length).toBe(0);
 });
