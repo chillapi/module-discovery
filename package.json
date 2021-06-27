@@ -1,8 +1,9 @@
 {
   "name": "@chillapi/module-discovery",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Module Auto-Discovery from package.json",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
     "prebuild": "rimraf dist/*",
@@ -25,8 +26,8 @@
     "url": "https://github.com/chillapi/module-discovery/issues"
   },
   "homepage": "https://github.com/chillapi/module-discovery#readme",
-  "dependencies":{
-    "pkg-up":"^3.1.0"
+  "dependencies": {
+    "pkg-up": "^3.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
