@@ -1,6 +1,6 @@
 {
   "name": "@chillapi/module-discovery",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Module Auto-Discovery from package.json",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -27,7 +27,8 @@
   },
   "homepage": "https://github.com/chillapi/module-discovery#readme",
   "dependencies": {
-    "pkg-up": "^3.1.0"
+    "pkg-up": "^3.1.0",
+    "@chillapi/stub": "^1.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",

@@ -7,5 +7,7 @@ export async function load(interfaceItem: string) {
     const pkg = JSON.parse((await readFile(pkgPath)).toString());
     return Object.keys(pkg.dependencies)
         .map(dep => require(dep))
-        .filter(dep => !!dep[interfaceItem])
+        .filter(dep => !!dep.default
+            && !!dep.default.prototype
+            && !!dep.default.prototype[interfaceItem]);
 }
