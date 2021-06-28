@@ -27,8 +27,7 @@
   },
   "homepage": "https://github.com/chillapi/module-discovery#readme",
   "dependencies": {
-    "pkg-up": "^3.1.0",
-    "@chillapi/stub": "^1.0.5"
+    "pkg-up": "^3.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
