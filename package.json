@@ -1,6 +1,6 @@
 {
   "name": "@chillapi/module-discovery",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Module Auto-Discovery from package.json",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
