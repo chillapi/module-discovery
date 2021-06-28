@@ -6,6 +6,5 @@ export async function load(interfaceItem: string): Promise<string[]> {
     console.log(`Found package.json at ${pkgPath}`);
     const pkg = JSON.parse((await readFile(pkgPath)).toString());
     return Object.keys(pkg.dependencies)
-        .map(dep => require(dep))
-        .filter(dep => !!dep[interfaceItem]);
+        .filter(dep => !!require(dep)[interfaceItem]);
 }
